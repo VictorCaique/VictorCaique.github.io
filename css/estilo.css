@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+/*comentario*/
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+.acessibilidade {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.atalhos,
+.atalhos2 {
+    list-style: none;
+    display: inline-flex;
+    padding: 5px;
+    justify-content: left;
+}
+
+.atalhos li {
+    padding-left: 10px;
+}
+
+.atalhos2 {
+    margin-left: 40%;
+
+}
+
+.atalhos2 li {
+    padding-left: 10px;
+}
+
+#topo {
+    background-color: #eee;
+    height: auto;
+    justify-content: center;
+}
+
+.imagem {
+    width: 40%;
+    height: auto;
+}
+
+nav {
+
+    height: 100px;
+    background-color: crimson;
+    justify-content: center;
+}
+
+.menu {
+    display: inline-flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.menu li {
+
+    position: relative;
+    padding: 20px 30px;
+
+}
+
+.menu li a {
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.menu li a:hover {
+
+    color: #000;
+}
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: crimson;
+    padding: 5%;
+}
+
+.menu li:hover ul {
+    display: block;
+
+}
+
+.menu li ul li {
+    display: block;
+    width: 160px;
+}
+
+
+#conteudo {
+    min-height: 800px;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+}
+
+#conteudo h1 {
+
+    text-align: center;
+    padding: 2% 5%;
+}
+
+#conteudo p,
+ol,
+h2,
+img {
+    padding: 2% 5%;
+}
+
+#rodape {
+    justify-content: center;
+    text-align: center;
+    background-color: darkblue;
+    color: #fff;
+    height: 80px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form,
+fieldset {
+    padding: 5%;
+    border: none;
+}
+
+input,
+select,
+textarea {
+    width: 60%;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+label,
+legend {
+    font-size: 0.7em;
+}
+
+button {
+
+    width: 25%;
+    padding: 2%;
+    margin-left: 6%;
+}
+
+.required::after {
+    content: " *";
+    color: red;
+
+}
